@@ -12,8 +12,11 @@ public:
     void exer2();
     void exer3();
     void exer4();
-};
-
+    void exer5();
+    void exer6();
+    void exer7();
+    void exer8();
+    void exer9();
 
 
 #endif

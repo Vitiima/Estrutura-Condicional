@@ -105,4 +105,41 @@ void Exercicios_Estrutura_Condicional::exer4() {
     float centro = x+y+z-maior-menor;
     cout << "Em Ordem Crescente os Valores"<<endl<<menor<<endl<<centro<<endl<<maior<<endl;
 }
+void Exercicios_Estrutura_Condicional::exer5() {
+    float num1,num2,num3,num4,aux;
+    cout<< "digite 3 numeros em ordem crescente e um qualquer após"<<endl;
+    cout << "primeiro numero"<<endl;
+    cin>> num1;
+    cout<< "segundo numero"<<endl;
+    cin >> aux;
+    if (aux < num1) {
+        cout<< "esse numero não é valido! e Menor que o anterior, coloque em ordem crescente"<<endl;
+        return;
+    } else {
+        num2 = aux;
+    }
+    cout<< "terceiro numero"<<endl;
+    cin >> aux;
+    if (aux < num2) {
+        cout<< "esse numero não é valido! e Menor que o anterior, coloque em ordem crescente"<<endl;
+        return;
+    } else {
+        num3 = aux;
+    }
+    cout<<"agora o quarto numero a sua escolha"<<endl;
+    cin>> num4;
+    if (num4 < num1) {
+        cout<< "Em Ordem Decrescente"<<endl<<num3<<endl<<num2<<endl<<num1<<endl<<num4<<endl;
+    }
+    if (num4 > num1 || num4 < num2) {
+        cout<< "Em Ordem Decrescente"<<endl<<num3<<endl<<num2<<endl<<num4<<endl<<num1<<endl;
+    }
+    if (num4 > num2 || num4 < num3) {
+        cout<< "Em Ordem Decrescente"<<endl<<num3<<endl<<num4<<endl<<num2<<endl<<num1<<endl;
+    }
+    if (num4 > num3) {
+        cout<< "Em Ordem Decrescente"<<endl<<num4<<endl<<num3<<endl<<num2<<endl<<num1<<endl;
+    }
+}
+
 
