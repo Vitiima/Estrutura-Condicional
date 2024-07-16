@@ -10,6 +10,8 @@ class Exercicios_Estrutura_Condicional {
 public:
     void exer1();
     void exer2();
+    void exer3();
+    void exer4();
 };
 
 

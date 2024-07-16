@@ -62,3 +62,47 @@ void Exercicios_Estrutura_Condicional::exer2() {
         "Voce Foi Aprovado!, Parabens!";
     }
 }
+void Exercicios_Estrutura_Condicional::exer3() {
+    float x,y;
+    cout << "adicione o primeiro valor" <<endl;
+    cin >> x;
+    cout << "agora adicione o segundo valor" << endl;
+    cin >> y;
+
+    if (x > y) {
+        cout << "o maior valor é:"<< x <<endl;
+    }
+    /*if (y > x) {
+        cout << "o maior valor é:"<< y <<endl;
+    }*/
+    else {
+        cout << "o maior valor é:"<< y <<endl;
+    }
+}
+void Exercicios_Estrutura_Condicional::exer4() {
+    float x,y,z;
+    float menor,maior;
+    cout << "adicione o primeiro valor" <<endl;
+    cin >> x;
+    cout << "agora adicione o segundo valor" << endl;
+    cin >> y;
+    cout << "agora adicione o ultimo valor valor" << endl;
+    cin >> z;
+    maior = x;
+    menor = x;
+    if (y < menor) {
+        menor = y;
+    }
+    if (z < menor) {
+        menor = z;
+    }
+    if (y > maior) {
+        maior = y;
+    }
+    if (z > maior) {
+        maior = z;
+    }
+    float centro = x+y+z-maior-menor;
+    cout << "Em Ordem Crescente os Valores"<<endl<<menor<<endl<<centro<<endl<<maior<<endl;
+}
+
