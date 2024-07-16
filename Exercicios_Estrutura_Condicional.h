@@ -9,7 +9,7 @@ class Exercicios_Estrutura_Condicional {
     Exercicios_Estrutura_Condicional() = default;
 public:
     void exer1();
-    float exer2();
+    void exer2();
 };
 
 

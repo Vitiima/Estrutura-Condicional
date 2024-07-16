@@ -42,3 +42,23 @@ void Exercicios_Estrutura_Condicional::exer1() {
     return;
 }
 
+void Exercicios_Estrutura_Condicional::exer2() {
+    float n1,n2,n3;
+    cout << "adicione a sua primeira nota";
+    cin >> n1;
+    cout << "agora a segunda nota";
+    cin >> n2;
+    cout << "terceira e ultima nota";
+    cin >> n3;
+    float media = (n1+n2+n3)/3;
+    if (media < 3) {
+        cout << "Voce foi reprovado, sua media foi:",media <<endl;
+        return;
+    }
+    if (media < 6) {
+        cout << "Sera necessario realizar O EXAME, sua media foi:",media <<end;
+    }
+    else {
+        "Voce Foi Aprovado!, Parabens!";
+    }
+}
